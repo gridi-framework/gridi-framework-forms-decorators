@@ -1,0 +1,54 @@
+//Form element group
+$form-group-margin-top: 10px !default;
+$form-group-margin-bottom: 10px !default;
+$form-group-margin-left: 0 !default;
+$form-group-margin-right: 0 !default;
+//Defined margins for each screens.
+$form-group-margin-for-screens: () !default;
+/*$form-group-margin-for-screens: (
+    s1: (
+        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
+        bottom: 20px,
+        left: 20px,
+        right: 20px,
+    ),
+    ...
+) !default;*/
+
+//Form element help
+$form-element-help-margin-top: 5px !default;
+$form-element-help-margin-bottom: 5px !default;
+$form-element-help-margin-left: 0 !default;
+$form-element-help-margin-right: 0 !default;
+//Defined margins for each screens.
+$form-element-help-margin-for-screens: () !default;
+/*$form-element-help-margin-for-screens: (
+    s1: (
+        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
+        bottom: 20px,
+        left: 20px,
+        right: 20px,
+    ),
+    ...
+) !default;*/
+
+$form-element-help-item-margin: 0.1em 0 !default;
+$form-element-help-item-padding: 0 0 0 5px !default;
+$form-element-help-item-before-content: "* " !default;
+
+//Form Element description
+$form-element-description-margin-top: 5px !default;
+$form-element-description-margin-bottom: 5px !default;
+$form-element-description-margin-left: 0 !default;
+$form-element-description-margin-right: 0 !default;
+//Defined margins for each screens.
+$form-element-description-margin-for-screens: () !default;
+/*$form-element-description-margin-for-screens: (
+    s1: (
+        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
+        bottom: 20px,
+        left: 20px,
+        right: 20px,
+    ),
+    ...
+) !default;*/

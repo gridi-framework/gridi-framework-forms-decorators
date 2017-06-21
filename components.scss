@@ -1,0 +1,35 @@
+.form-group {
+    @include include-element-margin($form-group-margin-top, $form-group-margin-bottom, $form-group-margin-left, $form-group-margin-right, $form-group-margin-for-screens);
+}
+
+.form-element-help {
+    display: block;
+    @include include-element-margin($form-element-help-margin-top, $form-element-help-margin-bottom, $form-element-help-margin-left, $form-element-help-margin-right, $form-element-help-margin-for-screens);
+    border: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li, .form-element-help-item {
+        display: block;
+        margin: $form-element-help-item-margin;
+        border: 0;
+        padding: $form-element-help-item-padding;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:before {
+            content: $form-element-help-item-before-content;
+            display: inline;
+        }
+    }
+}
+
+.form-element-description {
+    @include include-element-margin($form-element-description-margin-top, $form-element-description-margin-bottom, $form-element-description-margin-left, $form-element-description-margin-right, $form-element-description-margin-for-screens);
+}
