@@ -23,7 +23,7 @@
             margin-bottom: 0;
         }
 
-        &:before {
+        &::before {
             content: $form-element-help-item-before-content;
             display: inline;
         }
