@@ -1,19 +1,52 @@
 .form-group {
-    @include include-element-margin($form-group-margin-top, $form-group-margin-bottom, $form-group-margin-left, $form-group-margin-right, $form-group-margin-for-screens);
+    @include margin-shorthand-with-screens-support((
+        top: $form-group-margin-top,
+        bottom: $form-group-margin-bottom,
+        left: $form-group-margin-left,
+        right: $form-group-margin-right
+    ), $form-group-margin-for-screens);
+    @if mixin-exists(form-group-extra-style) {
+        @include form-group-extra-style();
+    }
 }
 
 .form-element-help {
-    display: block;
-    @include include-element-margin($form-element-help-margin-top, $form-element-help-margin-bottom, $form-element-help-margin-left, $form-element-help-margin-right, $form-element-help-margin-for-screens);
-    border: 0;
-    padding: 0;
+    display: $form-element-help-display;
+    @include margin-shorthand-with-screens-support((
+        top: $form-element-help-margin-top,
+        bottom: $form-element-help-margin-bottom,
+        left: $form-element-help-margin-left,
+        right: $form-element-help-margin-right
+    ), $form-element-help-margin-for-screens);
+    @include padding-shorthand((
+        top: $form-element-help-padding-top,
+        bottom: $form-element-help-padding-bottom,
+        left: $form-element-help-padding-left,
+        right: $form-element-help-padding-right
+    ));
     list-style-type: none;
 
+    @if mixin-exists(form-element-help-extra-style) {
+        @include form-element-help-extra-style();
+    }
+
     li, .form-element-help-item {
-        display: block;
-        margin: $form-element-help-item-margin;
-        border: 0;
-        padding: $form-element-help-item-padding;
+        display: $form-element-help-item-display;
+        @include margin-shorthand((
+            top: $form-element-help-item-margin-top,
+            bottom: $form-element-help-item-margin-bottom,
+            left: $form-element-help-item-margin-left,
+            right: $form-element-help-item-margin-right
+        ));
+        @include padding-shorthand((
+            top: $form-element-help-item-padding-top,
+            bottom: $form-element-help-item-padding-bottom,
+            left: $form-element-help-item-padding-left,
+            right: $form-element-help-item-padding-right
+        ));
+        @if mixin-exists(form-element-help-item-extra-style) {
+            @include form-element-help-item-extra-style();
+        }
 
         &:first-child {
             margin-top: 0;
@@ -25,11 +58,22 @@
 
         &::before {
             content: $form-element-help-item-before-content;
-            display: inline;
+            display: $form-element-help-item-before-display;
+            @if mixin-exists(form-element-help-item-before-extra-style) {
+                @include form-element-help-item-before-extra-style();
+            }
         }
     }
 }
 
 .form-element-description {
-    @include include-element-margin($form-element-description-margin-top, $form-element-description-margin-bottom, $form-element-description-margin-left, $form-element-description-margin-right, $form-element-description-margin-for-screens);
+    @include margin-shorthand-with-screens-support((
+        top: $form-element-description-margin-top,
+        bottom: $form-element-description-margin-bottom,
+        left: $form-element-description-margin-left,
+        right: $form-element-description-margin-right
+    ), $form-element-description-margin-for-screens);
+    @if mixin-exists(form-description-extra-style) {
+        @include form-description-extra-style();
+    }
 }

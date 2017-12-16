@@ -1,54 +1,59 @@
 //Form element group
-$form-group-margin-top: 10px !default;
-$form-group-margin-bottom: 10px !default;
-$form-group-margin-left: 0 !default;
-$form-group-margin-right: 0 !default;
-//Defined margins for each screens.
-$form-group-margin-for-screens: () !default;
-/*$form-group-margin-for-screens: (
-    s1: (
-        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
-        bottom: 20px,
-        left: 20px,
-        right: 20px,
-    ),
-    ...
-) !default;*/
+$form-group-margin-top: $form-item-elements-margin-top !default;
+$form-group-margin-bottom: $form-item-elements-margin-bottom !default;
+$form-group-margin-left: $form-item-elements-margin-left !default;
+$form-group-margin-right: $form-item-elements-margin-right !default;
+$form-group-margin-for-screens: $form-item-elements-margin-for-screens !default;
+
+//Extra style
+//@mixin form-group-extra-style() {} //Create this mixin before import module when you want add some special style for element
 
 //Form element help
-$form-element-help-margin-top: 5px !default;
-$form-element-help-margin-bottom: 5px !default;
+$form-element-help-display: block !default;
+
+$form-element-help-margin-top: 0.3rem !default;
+$form-element-help-margin-bottom: 0.3rem !default;
 $form-element-help-margin-left: 0 !default;
 $form-element-help-margin-right: 0 !default;
-//Defined margins for each screens.
 $form-element-help-margin-for-screens: () !default;
-/*$form-element-help-margin-for-screens: (
-    s1: (
-        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
-        bottom: 20px,
-        left: 20px,
-        right: 20px,
-    ),
-    ...
-) !default;*/
 
-$form-element-help-item-margin: 0.1em 0 !default;
-$form-element-help-item-padding: 0 0 0 5px !default;
+$form-element-help-padding-top: 0 !default;
+$form-element-help-padding-bottom: 0 !default;
+$form-element-help-padding-left: 0 !default;
+$form-element-help-padding-right: 0 !default;
+
+//Extra style
+//@mixin form-element-help-extra-style() {} //Create this mixin before import module when you want add some special style for element
+
+//Form element help item
+$form-element-help-item-display: block !default;
+
+$form-element-help-item-margin-top: 0.1rem !default;
+$form-element-help-item-margin-bottom: 0.1rem !default;
+$form-element-help-item-margin-left: 0 !default;
+$form-element-help-item-margin-right: 0 !default;
+
+$form-element-help-item-padding-top: 0 !default;
+$form-element-help-item-padding-bottom: 0 !default;
+$form-element-help-item-padding-left: 0.3rem !default;
+$form-element-help-item-padding-right: 0 !default;
+
+//Extra style
+//@mixin form-element-help-item-extra-style() {} //Create this mixin before import module when you want add some special style for element
+
+//Form element help item before
+$form-element-help-item-before-display: inline !default;
 $form-element-help-item-before-content: "* " !default;
 
+//Extra style
+//@mixin form-element-help-item-before-extra-style() {} //Create this mixin before import module when you want add some special style for element
+
 //Form Element description
-$form-element-description-margin-top: 5px !default;
-$form-element-description-margin-bottom: 5px !default;
+$form-element-description-margin-top: 0.3rem !default;
+$form-element-description-margin-bottom: 0.3rem !default;
 $form-element-description-margin-left: 0 !default;
 $form-element-description-margin-right: 0 !default;
-//Defined margins for each screens.
 $form-element-description-margin-for-screens: () !default;
-/*$form-element-description-margin-for-screens: (
-    s1: (
-        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
-        bottom: 20px,
-        left: 20px,
-        right: 20px,
-    ),
-    ...
-) !default;*/
+
+//Extra style
+//@mixin form-description-extra-style() {} //Create this mixin before import module when you want add some special style for element
